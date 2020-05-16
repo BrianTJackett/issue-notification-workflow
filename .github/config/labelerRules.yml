@@ -1,6 +1,6 @@
-"area: exchange":
+'area: exchange':
     - 'Product: exchange'
-"area: sharepoint":
+'area: sharepoint':
     - 'Product: sharepoint'
-"area: teams":
+'area: teams':
     - 'Product: teams'
