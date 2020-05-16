@@ -20,10 +20,24 @@ jobs:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
 
-    - name: RegEx Issue Labeler
-      uses: github/issue-labeler@v2.1
+#    - name: RegEx Issue Labeler
+#      uses: github/issue-labeler@v2.1
+#      with:
+#        # The GITHUB_TOKEN secret
+#        repo-token: "${{ secrets.GITHUB_TOKEN }}"
+#        # Path to the labeler.yml configuration file
+#        configuration-path: .github/config/labelerRules.yml
+
+    - name: Auto label
+      uses: Renato66/auto-label@v2.1.2
       with:
-        # The GITHUB_TOKEN secret
-        repo-token: "${{ secrets.GITHUB_TOKEN }}"
-        # Path to the labeler.yml configuration file
-        configuration-path: .github/config/labelerRules.yml
+        # github token for the repository
+        repo-token:  "${{ secrets.GITHUB_TOKEN }}"
+        # 
+        ignore-comments: true
+        # 
+        labels-synonyms: '{"area: sharepoint":["Product: sharepoint"],"area: exchange":["Product: exchange"]}'
+        # 
+        labels-not-allowed: '["good first issue"]'
+        # 
+        default-labels: '["documentation"]'
