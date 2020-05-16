@@ -1,6 +1,6 @@
-'area: exchange':
+documentation:
     - 'Product: exchange'
-'area: sharepoint':
-    - 'Product: sharepoint'
-'area: teams':
-    - 'Product: teams'
+#'area: sharepoint':
+#    - 'Product: sharepoint'
+#'area: teams':
+#    - 'Product: teams'
