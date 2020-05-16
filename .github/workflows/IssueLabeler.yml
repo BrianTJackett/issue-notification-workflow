@@ -26,4 +26,4 @@ jobs:
         # The GITHUB_TOKEN secret
         repo-token: "${{ secrets.GITHUB_TOKEN }}"
         # Path to the labeler.yml configuration file
-        configuration-path: .github/labeler.yml
+        configuration-path: .github/config/labelerRules.yml
