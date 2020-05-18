@@ -15,7 +15,7 @@ jobs:
       uses: Renato66/auto-label@v2.1.2
       with:
         # github token for the repository
-        repo-token:  "${{ secrets.GITHUB_TOKEN }}"
+        repo-token:  "${{ secrets.Issue_Notifier_PAT }}"
         # 
         ignore-comments: true
         # 
