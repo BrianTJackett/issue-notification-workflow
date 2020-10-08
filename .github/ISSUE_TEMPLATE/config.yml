@@ -1,0 +1,9 @@
+
+blank_issues_enabled: true
+contact_links:
+  - name: Microsoft Graph documentation
+    url: https://docs.microsoft.com/en-us/graph/
+    about: All developer documentation for Microsoft Graph can be found here.
+  - name: Microsoft Graph Q&A
+    url: https://docs.microsoft.com/en-us/answers/products/graph
+    about: Please submit community questions here.
